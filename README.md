@@ -7,12 +7,13 @@ To run this project locally, follow these steps:
    ```
    git clone <repository-url>
    ```
+   and go inside it using cd waste-management
 
 2. Create a virtual environment and activate it.
 
    ```
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
    ```
 
 3. Install the project dependencies.
@@ -20,27 +21,29 @@ To run this project locally, follow these steps:
    ```
    pip install -r requirements.txt
    ```
-
-4. Set up the Django database and run migrations.
+   then go inside the waste_management (use cd waste_management)
+   
+5. Set up the Django database and run migrations.
 
    ```
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-5. Create a superuser account to access the admin panel.
+6. Create a superuser account to access the admin panel.
 
    ```
    python manage.py createsuperuser
    ```
+   you will be asked admin: email: password: etc give whatever you want can leave email also no issue
 
-6. Start the development server.
+7. Start the development server.
 
    ```
    python manage.py runserver
    ```
 
-7. Access the admin panel at `http://localhost:8000/admin/` and use your superuser credentials to log in.
+8. Access the admin panel at `http://localhost:8000/admin/` and use your superuser credentials to log in.
 
 ## Usage
 
